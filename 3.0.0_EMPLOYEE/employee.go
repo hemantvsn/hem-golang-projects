@@ -4,6 +4,12 @@ type Employee struct {
 	name        string
 	leavesTaken int
 	salary      int
+	address     []Address
+}
+
+type Address struct {
+	city    string
+	country string
 }
 
 func (emp Employee) getLeavesLeft() int {
